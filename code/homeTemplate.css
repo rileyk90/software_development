@@ -1,0 +1,15 @@
+.home_icons{
+	height: 50px;
+	background-color: transparent;
+	padding: 10px 30px 100px 10px;
+	text-align: center;
+	width: 95%;
+	position: relative;
+}
+
+.icon{
+	height: 175px;
+	width: 175px;
+	float: center;
+	padding: 0px 0px 0px 45px;
+}
