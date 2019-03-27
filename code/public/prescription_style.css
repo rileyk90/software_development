@@ -1,0 +1,61 @@
+/********************************************************************
+** Author: Riley Kraft
+** Date: 08/07/2018
+** Description: This is the style page for features specific to the
+				prescription page.
+** Resources:
+		
+*********************************************************************/
+
+#content{
+	overflow: auto;
+	height: 100%;
+	position: relative;
+	font-family: sans-sarif;
+}
+
+body{
+	width: 90%;
+	margin: auto;
+}
+
+fieldset {
+	margin: auto;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    width: 75%;
+    padding: 10px;
+}
+
+input { 
+	border: 1px solid #000000; 
+	padding: 5px 0px 0px 0px;
+	background-color: white; 
+	color: black;
+	width: 30%;
+}
+
+textarea{
+	background-color: white;
+	color: black;
+}
+
+#name{
+	margin: auto;
+	padding: 10px;
+	width: 50%;
+}
+
+#instructions{
+	wifth: 75%;
+}
+
+#addPrescription{
+	margin: auto;
+    border-radius: 2px;
+    padding: 10px;
+	color: black;
+	background-color: #2ad820;
+	border: outset;
+	width: 100%;
+}

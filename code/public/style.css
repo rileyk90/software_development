@@ -1,0 +1,309 @@
+/********************************************************************
+** Author: Group 8
+** Date: 08/17/2018
+** Description: This is the main style page for all html files for
+				this website. This file handles the structure and
+				theme for the entire website.
+*********************************************************************/
+
+*{
+	font-family: "veranda", sans-serif;
+	color: #17415f;
+	background-color: white;
+	font-size: 12px;
+}
+
+#header{
+	background: url("logo.jpeg") no-repeat left top;
+	background-size: 125px 125px;
+	border-bottom: 1px white solid;
+}
+
+h1{
+	color: #17415f;
+	text-align: left;
+	padding: 25px 0px 0px 100px;
+	background-color: transparent;
+	text-shadow: 0 0 2px #17415f;
+	font-size: 38px;
+}
+
+#nav{
+	color: #17415f;
+	margin: 0.5%;
+	text-align: right;
+	font-size: 12px;
+	padding: 2px 30px 0px 0px;
+	background-color: transparent;
+}
+
+a{
+	text-decoration: none;
+	padding: 15px 15px;
+}
+
+#nav-bar1{
+	height: 0px;
+	width: 97.75%;
+	margin-left: 0.5%;
+	padding: 0px 15px 15px 0px;
+	border-bottom: 2px #FDBB4D solid;
+}
+
+#nav-bar2{
+	height: 0px;
+	width: 97.75%;
+	margin-left: 0.5%;
+	padding: 0px 15px 10px 0px;
+	border-bottom: 2px #56CAC1 solid;
+}
+
+#username{
+    margin-left: 20px;
+    width: 20%;
+    display: inline;
+    float: left;
+    margin-top: 3px;
+    clear: left;
+}
+
+#font_change{
+	text-align: right;
+	margin-top: 1px;
+	display: inline;
+	float: right;
+	width:20%;
+	background-color: transparent;
+	clear: right;
+}
+
+#t12pt{
+    font-size: 12px;
+    background-color: transparent;
+}
+
+#t24pt{
+    font-size: 24px;
+    background-color: transparent;
+}
+
+#t36pt{
+    font-size: 36px;
+    background-color: transparent;
+}
+
+#content{
+	text-align: center;
+	margin-top: 100px;
+	overflow: 0 auto;
+	margin-bottom: 75px;
+}
+
+body{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.icons{
+	height: 75px;
+	width: 75px;
+	text-align: center;
+	background-color: transparent;
+	padding: 10px 0px 10px 5%;
+	float: center;
+}
+
+.links{
+	text-align: center;
+	margin-top: 2%;
+	margin-right: 8%;
+	float: center;
+}
+
+.pageList{
+	text-align: left;
+	margin: 4px;
+	list-style: none;
+}
+
+#footer{
+	margin: 0.5%;
+	text-align: right;
+	font-size: 12px;
+	background-color: transparent;
+	margin-top: 1%;
+	padding: 10px 30px 5px 0px;
+}
+
+.SurveyNav	{
+	padding-top: 5%;
+}
+
+/* answer slider */
+.slidecontainer	{
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #56CAC1;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+/* Customize the label (the container) */
+.containerC {
+  display: block;
+  position: relative;
+  float: left;
+  padding-left: 35px;
+  padding-right: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerC input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerC:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerC input:checked ~ .checkmark {
+  background-color: #56CAC1;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerC input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerC .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Customize the label (the container) */
+.containerR {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerR input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerR:hover input ~ .radiomark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerR input:checked ~ .radiomark {
+  background-color: #56CAC1;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiomark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerR input:checked ~ .radiomark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerR .radiomark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
