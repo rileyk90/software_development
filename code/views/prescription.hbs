@@ -1,0 +1,152 @@
+<!------------------------------------------------------------------------------
+-- Author: Riley Kraft
+-- Date: 08/12/2018
+-- Description: The prescription page features the form for manually adding 
+--				prescription objects into the system.
+-- Resources:
+-- 		https://www.w3schools.com/icons/tryit.asp?filename=trybs_ref_glyph_pencil
+--		https://stackoverflow.com/questions/14867558/html-tag-a-want-to-add-both-href-and-onclick-working
+--		https://www.w3schools.com/jquerymobile/tryit.asp?filename=tryjqmob_forms_collapsible
+--		http://jsbin.com/uboqu3/1/edit?html,js,output
+------------------------------------------------------------------------------->
+
+<title>prescription</title>
+<!-- <link rel = "stylesheet" href= "style/home_style.css" type = "text/css"/> homepage style sheet-->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> edit icons -->
+<link rel = "stylesheet" href= "/prescription_style.css" type = "text/css"/>
+   
+<div id="content">
+	<fieldset>
+		<legend>New Prescription</legend>
+		<form id="newPrescription">																
+			<fieldset>
+				<input type="text" value="Name" name="name" id="name">
+				<!-- <a href="#" onlclick="enable('name')">
+					<span class="glyphicon glyphicon-pencil"></span>
+				</a> edit icon -->
+			</fieldset>
+			
+			<fieldset>
+   				<legend>Prescription</legend>
+   				<div>
+   					<!-- <input type="file" onchange="readURL(this);">
+					<img id="blah" src="#" alt="your image"> -->
+   				</div>
+ 			</fieldset>
+ 			
+ 			<fieldset>
+   				<legend>Dosage</legend>
+   				<div>
+					<input type="number" name="dosage" id="dosage" value="0" width="10">
+					<select name="dosage_unit" id="dosage_unit">
+						<option value="mg">mg</option>
+						<option value="g">g</option>
+						<option value="tsp">tsp</option>
+						<option value="Tbsp">Tbsp</option>
+						<option value="patch">patch</option>
+						<option value="spray">spray</option>
+						<option value="drops">drops</option>
+					</select>
+   				</div>
+ 			</fieldset>
+ 			
+ 			<fieldset>
+   				<legend>Instructions</legend>
+   				<div>
+   					<input type="text" id="instructions" value="">
+   					<!-- <a href="#" onlclick="enable('instructions');">
+     					<span class="glyphicon glyphicon-pencil"></span>
+   					</a> edit icon -->
+   				</div>
+   		
+   				<div>
+     				<label><input type="checkbox" id="food" value="with food">with food</label><br>
+     				<label><input type="checkbox" id="water" value="with water">with water</label><br>
+     				<label><input type="checkbox" id="bed" value="before bed">before bed</label><br>
+   				</div>
+ 			</fieldset>
+ 			
+ 			<fieldset>
+   				<legend>Reminders</legend>
+   				<div>
+   					<label>take as needed</label>
+     				<!-- dosage reminder settings -->
+   				</div>
+ 			</fieldset>
+ 			
+ 			<fieldset>
+   				<legend>Schedule</legend>
+   				<div>
+   					<label>Start Date<input type="date" name="start_date" id="start_date" value=""></label><br>
+   					<label>Expir Date<input type="date" name="expir_date" id="expir_date" value=""></label>
+   				</div>
+   		
+   				<div>
+   					<label>Duration:</label><br>
+   					<label><input type="radio" name="limit" id="limit" value="limit">limit</label>
+   					<input type="number" id="duration" value="">
+   					<select>
+   						<option value="days">day(s)</option>
+   						<option value="weeks">week(s)</option>
+   						<option value="months">month(s)</option>
+   						<option value="years">year(s)</option>
+   					</select>
+   					<br>
+   					<label><input type="radio" name="limit" id="limit" value="no limit">no limit</label>
+   				</div>
+   
+   				<div>
+   					<label>Frequency:</label><br>
+   					<label><input type="radio" name="frequency" id="frequency" value="every day">everyday</label><br>
+   					<label><input type="radio" name="frequency" id="frequency" value="every">every</label>
+   					<input type="number" name="count" id="count" value=""><label>days</label><br>
+   					<label><input type="radio" name="frequency" id="frequency" value="custom">custom</label>
+   					<label><input type="checkbox" name="sun" id="sun" value="sun">Sun</label>
+   					<label><input type="checkbox" name="mon" id="mon" value="mon">Mon</label>
+   					<label><input type="checkbox" name="tue" id="tue" value="tue">Tue</label>
+   					<label><input type="checkbox" name="wed" id="wed" value="wed">Wed</label>
+   					<label><input type="checkbox" name="thu" id="thu" value="thu">Thu</label>
+   					<label><input type="checkbox" name="fri" id="fri" value="fri">Fri</label>
+   					<label><input type="checkbox" name="sat" id="sat" value="sat">Sat</label>  				
+   				</div>
+ 			</fieldset>
+ 			
+ 			<fieldset>
+   				<legend>Refills</legend>
+   				<div>						
+     				<label><input type="number" name="quantity" id="quantity" value="0">Doses</label>
+     				<select name="quantity_unit" id="quantity_unit">
+   						<option value="pills">pills</option>
+   						<option value="mL">mL</option>
+   						<option value="oz">oz</option>
+   						<option value="patches">patches</option>
+   					</select>
+     				<br>			
+     				<label><input type="number" name="refills" id="refills" value="0">Refills</label>
+   				</div>
+   		
+   				<div>
+   					<!-- refill reminder settings -->
+   				</div>
+   		
+   				<div>
+   					<label>Rx Number<input type="text" name="rx_numbmer" id="rx_number" value=""></label><br>
+   					<label>Rx Date<input type="date" name="rx_date" id="rx_date" value=""></label><br>
+   					<label>Rx Expir<input type="date" name="rx_expir" id="rx_expir" value=""></label><br>
+   				</div>
+ 			</fieldset>
+ 			
+ 			<fieldset>
+   				<legend>Doctor</legend>
+   				<div>
+    				<!-- add doctor -->
+   				</div>
+ 			</fieldset>
+ 	
+ 			<fieldset>
+				<button type="submit" id="addPrescription">Submit</button>		<!-- Set submit button -->
+			</fieldset>
+		</form>
+	</fieldset>
+</div>
+<script src="/prescription_script.js"> </script>
